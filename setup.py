@@ -20,7 +20,7 @@ setup(
     url='https://github.com/bodylabs/env-flag',
     license='MIT',
     py_modules=[
-        'env_flag.py',
+        'env_flag',
     ],
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
