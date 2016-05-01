@@ -3,7 +3,6 @@ import unittest
 import uuid
 from env_flag import env_flag
 
-
 class EnvironGetBoolTest(unittest.TestCase):
     def test_that_env_flag_for_unset_returns_false(self):
         env_var = str(uuid.uuid4())
