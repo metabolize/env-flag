@@ -24,7 +24,7 @@ task :test do
 end
 
 task :lint do
-  raise unless system "./pylint_test.py baiji --min_rating 10.0"
+  raise unless system "./pylint_test.py env_flag --min_rating 10.0"
 end
 
 task :test_for_ci => [
