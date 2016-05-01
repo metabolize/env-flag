@@ -18,12 +18,16 @@ Values are coerced as follows:
 - When the variable is unset, or set to the empty string, return `default`.
 - When the variable is set to a truthy value, return `True`.
   These are the truthy values:
+
       - 1
       - true, yes, on
+
 - When the variable is set to the anything else, return `False`.
   Example falsy values:
+
       - 0
       - no
+
 - Ignore case and leading/trailing whitespace.
 
 
