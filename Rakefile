@@ -4,6 +4,10 @@ task :install_style_config do
     raise unless system "git clone --depth 1 -b 68_initial https://github.com/bodylabs/bodylabs-python-style.git"
 end
 
+task :require_style_config do
+  Rake::Task[:install_style_config].invoke unless File.executable? 'bodylabs-python-style/bin/pylint_test'
+end
+
 $mac_os = `uname -s`.strip == 'Darwin'
 
 desc "Install dependencies for distribution"
@@ -30,7 +34,7 @@ task :test do
   raise unless system "nose2"
 end
 
-task :lint do
+task :lint => :require_style_config do
   raise unless system "bodylabs-python-style/bin/pylint_test env_flag --min_rating 10.0"
 end
 
