@@ -7,7 +7,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -102,3 +103,4 @@ target/
 # dotenv
 .env
 
+/bodylabs-python-style/

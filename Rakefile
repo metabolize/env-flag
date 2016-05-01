@@ -1,3 +1,9 @@
+desc "Install style config"
+task :install_style_config do
+    FileUtils.rm_rf "bodylabs-python-style" if Dir.exists? "bodylabs-python-style"
+    raise unless system "git clone --single-branch --depth 1 -b 68_initial https://github.com/bodylabs/bodylabs-python-style.git"
+end
+
 $mac_os = `uname -s`.strip == 'Darwin'
 
 desc "Install dependencies for distribution"
@@ -5,6 +11,7 @@ task :install_dist do
     if $mac_os
         raise unless system "brew update"
         raise unless system "brew install pandoc"
+        raise unless system "pip install pypandoc"
     else
         puts
         puts "You must install:"
@@ -24,13 +31,8 @@ task :test do
 end
 
 task :lint do
-  raise unless system "./pylint_test.py env_flag --min_rating 10.0"
+  raise unless system "bodylabs-python-style/bin/pylint_test env_flag --min_rating 10.0"
 end
-
-task :test_for_ci => [
-    :test,
-    :lint,
-]
 
 desc "Remove .pyc files"
 task :clean do

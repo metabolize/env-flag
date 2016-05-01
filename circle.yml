@@ -9,6 +9,7 @@ machine:
 
 dependencies:
   override: # Rather than using their autodetected steps, use these instead
+    - rake install_style_config
     - pip install -r requirements_dev.txt
 
 test:
