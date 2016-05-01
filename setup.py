@@ -11,8 +11,8 @@ except (IOError, ImportError):
 from setuptools import setup
 
 setup(
-    name='example',
-    version=__import__('example').__version__,
+    name='env-flag',
+    version=__import__('env_flag').__version__,
     author='Body Labs',
     author_email='paul.melnikow@bodylabs.com',
     description='Get boolean values from environment variables.',
