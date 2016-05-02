@@ -1,7 +1,12 @@
+$style_config_version = '1.0.0'
+
 desc "Install style config"
 task :install_style_config do
     FileUtils.rm_rf "bodylabs-python-style" if Dir.exists? "bodylabs-python-style"
-    raise unless system "git clone --depth 1 -b 68_initial https://github.com/bodylabs/bodylabs-python-style.git"
+    raise unless system "git clone https://github.com/bodylabs/bodylabs-python-style.git"
+    Dir.chdir 'bodylabs-python-style' do
+        raise unless system "git checkout tags/#{$style_config_version}"
+    end
 end
 
 task :require_style_config do
