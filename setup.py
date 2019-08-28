@@ -6,12 +6,12 @@ try:
     long_description = pypandoc.convert('README.md', 'rst')
 except (IOError, ImportError):
     long_description = ''
-    print 'warning: pandoc or pypandoc does not seem to be installed; using empty long_description'
+    print('warning: pandoc or pypandoc does not seem to be installed; using empty long_description')
 
 from setuptools import setup
 
 setup(
-    name='env-flag',
+    name='metabolenv-flag',
     version=__import__('env_flag').__version__,
     author='Body Labs',
     author_email='paul.melnikow@bodylabs.com',
@@ -28,6 +28,7 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
-        'Programming Language :: Python',
+        'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
     ]
 )
