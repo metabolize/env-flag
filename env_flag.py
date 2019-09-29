@@ -1,5 +1,6 @@
 __version__ = '1.1.0'
 
+
 def env_flag(env_var, default=False):
     """
     Return the specified environment variable coerced to a bool, as follows:
