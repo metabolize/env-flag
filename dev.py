@@ -26,13 +26,24 @@ def init():
 
 @cli.command()
 def test():
-    execute("nose2")
+    execute("pytest")
 
 
 @cli.command()
 def test_both():
-    execute("python2 -m nose2")
-    execute("python3 -m nose2")
+    execute("python2 -m pytest")
+    execute("python3 -m pytest")
+
+
+@cli.command()
+def coverage():
+    execute("pytest --cov=env_flag")
+
+
+@cli.command()
+def coverage_report():
+    execute("coverage html")
+    execute("open htmlcov/index.html")
 
 
 @cli.command()
