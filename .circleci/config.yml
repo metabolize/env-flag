@@ -27,7 +27,7 @@ jobs:
           when: always
           command: |
             . venv/bin/activate
-            ./dev.py test
+            ./dev.py coverage
 
   main@python3:
     docker:
@@ -55,7 +55,7 @@ jobs:
           when: always
           command: |
             . venv/bin/activate
-            ./dev.py test
+            ./dev.py coverage
 
       - run:
           name: Run the doc build
