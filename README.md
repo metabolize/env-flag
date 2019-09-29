@@ -1,5 +1,4 @@
-env-flag
-========
+# env-flag
 
 Get boolean values from environment variables in Python.
 
@@ -31,8 +30,7 @@ Values are coerced as follows:
 - Ignore case and leading/trailing whitespace.
 
 
-Development
------------
+## Development
 
 ```sh
 pip install -r requirements_dev.txt
@@ -41,22 +39,30 @@ rake lint
 ```
 
 
-Contribute
-----------
+## Contribute
 
-- Issue Tracker: github.com/bodylabs/env-flag/issues
-- Source Code: github.com/bodylabs/env-flag
+- Issue Tracker: https://github.com/metabolize/env-flag/issues
+- Source Code: https://github.com/metabolize/env-flag
 
 Pull requests welcome!
 
 
-Support
--------
+## Support
 
 If you are having issues, please let us know.
 
 
-License
--------
+## Acknowledgements
+
+This function was inspired by [node-env-flag][], the equivalent for Node.js.
+It was developed at Body Labs by [Paul Melnikow][] and later open sourced.
+It was forked in 2019 by Paul Melnikow. Thanks to a repository and package
+transfer from Body Labs, the fork has been merged back into the original.
+
+[node-env-flag]: https://www.npmjs.com/package/node-env-flag
+[paul melnikow]: https://github.com/paulmelnikow
+
+
+## License
 
 The project is licensed under the two-clause BSD license.
