@@ -1,4 +1,4 @@
-__version__ = '1.1.0'
+__version__ = "1.1.0"
 
 
 def env_flag(env_var, default=False):
@@ -17,7 +17,8 @@ def env_flag(env_var, default=False):
     - Ignore case and leading/trailing whitespace.
     """
     import os
-    environ_string = os.environ.get(env_var, '').strip().lower()
+
+    environ_string = os.environ.get(env_var, "").strip().lower()
     if not environ_string:
         return default
-    return environ_string in ['1', 'true', 'yes', 'on']
+    return environ_string in ["1", "true", "yes", "on"]
