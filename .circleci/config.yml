@@ -58,13 +58,6 @@ jobs:
             ./dev.py test
 
       - run:
-          name: Run the doc build
-          when: always
-          command: |
-            . venv/bin/activate
-            ./dev.py doc
-
-      - run:
           name: Check lint
           when: always
           command: |
