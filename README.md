@@ -4,12 +4,14 @@
 [![python versions](https://img.shields.io/pypi/pyversions/env-flag?style=flat-square)][pypi]
 [![license](https://img.shields.io/pypi/l/env-flag?style=flat-square)][pypi]
 [![build](https://img.shields.io/circleci/project/github/metabolize/env-flag/master?style=flat-square)][build]
+[![coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg?style=flat-square)][coverage]
 [![code style](https://img.shields.io/badge/code%20style-black-black?style=flat-square)][black]
 
 Get boolean values from environment variables in Python.
 
 [pypi]: https://pypi.org/project/env-flag/
 [build]: https://circleci.com/gh/metabolize/env-flag/tree/master
+[coverage]: https://github.com/metabolize/env-flag/blob/master/.coveragerc
 [black]: https://black.readthedocs.io/en/stable/
 
 ```py
