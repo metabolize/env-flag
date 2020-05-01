@@ -9,6 +9,7 @@ jobs:
 
       - run:
           name: Install python dependencies
+          # set -o pipefail; pip .. | cat is used to disable the progress bar.
           command: |
             mkdir -p venv
             virtualenv venv
