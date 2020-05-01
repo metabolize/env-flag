@@ -6,4 +6,5 @@ executor>=21.0
 click>=7.0,<8.0
 
 flake8>=3.7.7,<4.0
+flake8-import-order >=0.18.1,<0.19
 black==19.10b0
