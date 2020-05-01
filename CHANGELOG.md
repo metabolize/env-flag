@@ -1,5 +1,10 @@
 # Changelog
 
+## 2.0.0
+
+Require Python 3.
+
+
 ## 1.1.1
 
 Update documentation after unforking.
