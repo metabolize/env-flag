@@ -57,7 +57,7 @@ def black_check():
 @cli.command()
 def publish():
     execute("rm -rf dist/")
-    execute("python3 setup.py sdist")
+    execute("python3 setup.py sdist bdist_wheel")
     execute("twine upload dist/*")
 
 
