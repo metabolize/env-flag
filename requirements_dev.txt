@@ -4,3 +4,6 @@ pytest-cov==2.8.1
 # Used in dev.py.
 executor>=21.0
 click>=7.0,<8.0
+
+flake8>=3.7.7,<4.0
+black==19.10b0
