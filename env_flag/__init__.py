@@ -1,7 +1,7 @@
 __version__ = "2.0.0"
 
 
-def env_flag(env_var, default=False):
+def env_flag(env_var: str, default: bool = False) -> bool:
     """
     Return the specified environment variable coerced to a bool, as follows:
 
