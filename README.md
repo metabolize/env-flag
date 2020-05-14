@@ -41,6 +41,7 @@ Values are coerced as follows:
 
 - Ignore case and leading/trailing whitespace.
 
+
 ## Development
 
 ```sh
@@ -50,6 +51,7 @@ Values are coerced as follows:
 ./dev.py black
 ```
 
+
 ## Contribute
 
 - Issue Tracker: https://github.com/metabolize/env-flag/issues
@@ -57,9 +59,11 @@ Values are coerced as follows:
 
 Pull requests welcome!
 
+
 ## Support
 
 If you are having issues, please let us know.
+
 
 ## Acknowledgements
 
@@ -70,6 +74,7 @@ transfer from Body Labs, the fork has been merged back into the original.
 
 [node-env-flag]: https://www.npmjs.com/package/node-env-flag
 [paul melnikow]: https://github.com/paulmelnikow
+
 
 ## License
 
