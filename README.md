@@ -41,12 +41,14 @@ Values are coerced as follows:
 
 - Ignore case and leading/trailing whitespace.
 
+Provides MyPy-compatible type annotations.
+
 
 ## Development
 
 ```sh
 ./dev.py init
-./dev.py test-both
+./dev.py test
 ./dev.py lint
 ./dev.py black
 ```
